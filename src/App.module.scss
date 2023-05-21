@@ -12,7 +12,7 @@
 
 .App__title {
   font-family: "Concert One";
-  @include index.Responsive(font-size, 32px, 32px, 32px, 40px, 48px);
+  @include index.Responsive(font-size, 32px, 32px, 40px, 48px, 64px);
 }
 
 .App__currentWeather {
