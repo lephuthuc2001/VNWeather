@@ -1,0 +1,40 @@
+@use "../index";
+.icon {
+  @include index.Responsive(width, 60px, 70px, 80px, 90px, 100px);
+  @include index.Responsive(height, 60px, 70px, 80px, 90px, 100px);
+}
+.numbers {
+  display: flex;
+  align-items: center;
+  @include index.Responsive(gap, 8px, 12px, 16px, 20px, 24px);
+}
+
+.numbers span {
+  font-size: 16px;
+  // @include index.Responsive(font-size, 14px, 15px, 16px, 17px, 18px);
+}
+
+.forecast__date {
+  color: green;
+}
+
+.forecast__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+
+.title {
+  position: absolute;
+  font-weight: 500;
+  color: #adb5bd;
+  top: 8px;
+  left: 8px;
+  font-size: 14px;
+}
+
+.statistic__title {
+  @include index.Responsive(font-size, 8px, 9px, 10px, 11px, 12px);
+}

@@ -1,0 +1,66 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600&family=Poppins&family=Roboto:ital,wght@1,300&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@400;600&family=Poppins&family=Roboto:ital,wght@1,300&display=swap");
+@mixin Responsive($att, $xs, $sm__value, $md__value, $lg__value, $xl__value) {
+  #{$att}: $xs;
+  @media (min-width: $sm) {
+    #{$att}: $sm__value;
+  }
+  @media (min-width: $md) {
+    #{$att}: $md__value;
+  }
+  @media (min-width: $lg) {
+    #{$att}: $lg__value;
+  }
+  @media (min-width: $xl) {
+    #{$att}: $xl__value;
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Merriweather Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+  width: 50px;
+}

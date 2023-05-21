@@ -1,0 +1,43 @@
+@use "./index";
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@400;600&family=Poppins&family=Roboto:ital,wght@1,300&display=swap");
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #51cf66;
+  @include index.Responsive(padding, 16px, 24px, 32px, 40px 160px, 48px 320px);
+  @include index.Responsive(gap, 8px, 12px, 16px, 20px, 24px);
+}
+
+.App__title {
+  font-family: "Concert One";
+  @include index.Responsive(font-size, 32px, 32px, 32px, 40px, 48px);
+}
+
+.App__currentWeather {
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  @include index.Responsive(flex-direction, column, column, row, row, row);
+  @include index.Responsive(gap, 8px, 12px, 16px, 20px, 24px);
+  position: relative;
+  background-color: #d3f9d8;
+}
+
+.App__forecast {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  align-self: stretch;
+  max-width: 100%;
+  border-radius: 24px;
+  @include index.Responsive(padding, 8px, 16px, 24px, 24px, 24px);
+  @include index.Responsive(gap, 8px, 12px, 16px, 20px, 24px);
+  background-color: #d3f9d8;
+  overflow-x: auto;
+  position: relative;
+}
