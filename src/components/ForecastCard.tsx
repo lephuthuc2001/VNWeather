@@ -31,7 +31,6 @@ function ForecastCard(props: Props) {
         <Statistic
           value={props.maxTemp}
           valueStyle={{ color: "#cf1322" }}
-          prefix={<WarningFilled />}
           suffix={
             <div>
               <sup>o</sup>C
@@ -42,7 +41,6 @@ function ForecastCard(props: Props) {
         <Statistic
           value={props.minTemp}
           valueStyle={{ color: "#1c7ed6" }}
-          prefix={<SafetyCertificateFilled />}
           suffix={
             <div>
               <sup>o</sup>C

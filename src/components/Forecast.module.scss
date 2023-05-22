@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 200px;
+  flex-shrink: 0;
 }
 
 .title {

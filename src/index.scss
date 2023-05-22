@@ -50,7 +50,8 @@ code {
 
 /* width */
 ::-webkit-scrollbar {
-  height: 5px;
+  height: 6px;
+  width: 50px;
 }
 
 /* Track */
@@ -62,5 +63,4 @@ code {
 ::-webkit-scrollbar-thumb {
   background: green;
   border-radius: 10px;
-  width: 50px;
 }
